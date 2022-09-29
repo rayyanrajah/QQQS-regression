@@ -7,7 +7,7 @@ from datetime import timedelta
 
 # Plan: When in bear market (def: decline of 20% from peak), implement strategy
 # (buy QQQS when price 1 sd below reg line and sell when 1 sd above reg line)
-# until 388 days (average duration of a bear market) from peak
+# until 289 days (average duration of a bear market) from peak
 
 qqq_data = yf.Ticker("QQQ").history(period='2y')
 qqq_prices = pd.DataFrame(qqq_data['Close'].round(decimals=2))
